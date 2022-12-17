@@ -1,18 +1,15 @@
-import { Footer,Header, Home, HeroeDetails} from "./componets";
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { Footer, Header, Home, HeroeDetails } from "./components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const  App =() =>(
+const App = () => (
   <BrowserRouter>
-  <Header />
+    <Header />
     <Routes>
-      
-      <Route exact path='/' element={<Home />} />
-      <Route exact path='/:id' element={<HeroeDetails />} />
-    
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/:id" element={<HeroeDetails />} />
     </Routes>
     <Footer />
   </BrowserRouter>
-  );
-
+);
 
 export default App;
